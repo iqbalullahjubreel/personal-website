@@ -1,4 +1,3 @@
-// Smooth scroll for nav links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -9,7 +8,6 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// Section fade-in on scroll
 const sections = document.querySelectorAll("section");
 
 const observer = new IntersectionObserver((entries) => {
@@ -22,7 +20,6 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-// Contact form validation
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
